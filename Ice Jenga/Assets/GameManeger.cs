@@ -20,14 +20,11 @@ public class GameManeger : MonoBehaviour
                 // プレハブを元にオブジェクトを生成する
                 if (y % 2 == 0)
                 {
-                    GameObject instance =
-                    (GameObject)Instantiate(obj, new Vector3(6.0f * x, 4.0f*y, 0.0f), Quaternion.identity);
+                    GameObject instance = (GameObject)Instantiate(obj, new Vector3(0.851f * x, 0.821f * y, 0.0f), Quaternion.Euler(0f, 90f, 0f)); 
                 }
                 else
                 {
-                    GameObject instance =
-                    (GameObject)Instantiate(obj, new Vector3(0.0f, 4.0f*y, 6.0f * x), Quaternion.Euler(0f,90f,0f));
-
+                    GameObject instance = (GameObject)Instantiate(obj, new Vector3(0.0f, 0.821f * y, 0.851f * x), Quaternion.identity);
                 }
 
             }
